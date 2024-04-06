@@ -1,10 +1,13 @@
+//This code uses a 128*64 oled display and 5 potentiometers / sliders by default
+//This is a modified version from the code from: https://github.com/omriharel/deej
+
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SH1106.h>
 
 #define OLED_RESET -1
-Adafruit_SH1106 display(OLED_RESET);
+Adafruit_SH1106 display(OLED_RESET); //A4 SDA //A5 SCK
 
 const int NUM_SLIDERS = 5;
 int gap=5; //gap between beams
